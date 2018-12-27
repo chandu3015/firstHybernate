@@ -1,0 +1,31 @@
+package org.cha.dto;
+
+import javax.persistence.*;
+
+@Entity
+public class Vehicle {
+
+	@Id @GeneratedValue(strategy=GenerationType.AUTO)
+	private int vehicleID;
+	
+	private String vehicleName;
+
+	public int getVehicleID() {
+		return vehicleID;
+	}
+
+	public void setVehicleID(int vehicleID) {
+		this.vehicleID = vehicleID;
+	}
+
+	public String getVehicleName() {
+		return vehicleName;
+	}
+
+	public void setVehicleName(String vehicleName) {
+		this.vehicleName = vehicleName;
+	}
+	
+	
+	
+}
