@@ -32,11 +32,21 @@
         <property name="show_sql">true</property>
 
         <!-- Drop and re-create the database schema on startup -->
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
 
-        <!-- Names the annotated entity class -->
-        <mapping class="org.chandu.dto.UserDetails"/>
-
+        <!-- Names the annotated entity class -->       
+        <!--<mapping class="org.chandu.dto.UserDetails"/>-->
+        
+        <!--  
+        <mapping class="org.cha.dto.Vehicle"/>
+        <mapping class="org.cha.dto.Person"/>
+        <mapping class="org.cha.dto.Car"/>
+        <mapping class="org.cha.dto.Bike"/>
+        -->
+        
+        <mapping class="com.chae.dto.Owner"/>
+        
+        
     </session-factory>
 
 </hibernate-configuration>
